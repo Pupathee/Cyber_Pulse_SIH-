@@ -1,9 +1,9 @@
 // =========================================================
 // NETSENTRY AI — Frontend API Service
-// All calls go through Vite's proxy → FastAPI at :8000
+// Uses Vite's local proxy by default; production can set VITE_API_BASE_URL.
 // =========================================================
 
-const BASE = '/api'
+const BASE = (import.meta.env.VITE_API_BASE_URL || '/api').replace(/\/+$/, '')
 
 export interface ModelStatus {
   status: string

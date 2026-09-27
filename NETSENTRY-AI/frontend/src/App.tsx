@@ -19,6 +19,11 @@ export default function App() {
           <Route path="/attack-history"   element={<AttackHistory />} />
           <Route path="/analytics"        element={<Analytics />} />
         </Routes>
+        <footer className="border-t border-cyber-border/60 bg-cyber-bg/80 px-6 py-4 text-center">
+          <p className="text-xs tracking-wide text-cyber-muted">
+            Copyright (c) 2026 Cyber_Xcurve. All rights reserved.
+          </p>
+        </footer>
       </div>
     </BrowserRouter>
   )
